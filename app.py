@@ -9,7 +9,7 @@ import seaborn as sns
 # Page config
 st.set_page_config(page_title="Credit Card Fraud Detector", layout="wide")
 
-st.title("💳 Credit Card Fraud Detection System (Enhanced)")
+st.title("💳 Credit Card Fraud Detection System ")
 st.markdown("Upload a CSV or enter a single transaction manually to detect potential fraud.")
 
 # Load model and scaler
@@ -79,4 +79,4 @@ with st.expander("📈 Show Feature Importances"):
     st.pyplot(fig)
 
 st.markdown("---")
-st.caption("Model: DecisionTreeClassifier | Threshold: 0.65 | F1 ≈ 0.82")
+st.caption("Model: DecisionTreeClassifier | Threshold: 0.35 | F1 ≈ 0.82 | DO SUBSCRIBE :)  ")
