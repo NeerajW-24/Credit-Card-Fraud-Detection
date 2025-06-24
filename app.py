@@ -23,7 +23,7 @@ def predict_fraud(input_df):
     if 'Time' in df.columns:
         df.drop('Time', axis=1, inplace=True)
     probs = model.predict_proba(df)[:, 1]
-    preds = (probs > 0.65).astype(int)
+    preds = (probs > 0.35).astype(int)
     return preds, probs
 
 # --- Sidebar Input ---
